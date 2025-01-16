@@ -1,0 +1,416 @@
+@font-face {
+  font-family: "notmono";
+  src: url("https://cdn.glitch.global/ca3fab53-c8ab-42f6-934f-92ae328781e0/tir-notmono.otf?v=1736858604530");
+}
+
+@font-face {
+  font-family: "Gravitynormal";
+  src: url("https://cdn.glitch.global/ca3fab53-c8ab-42f6-934f-92ae328781e0/ABCGravityCyrillic-Normal-Trial.otf?v=1736858632082");
+}
+
+@font-face {
+  font-family: "Gravitycompress";
+  src: url("https://cdn.glitch.global/ca3fab53-c8ab-42f6-934f-92ae328781e0/ABCGravityCyrillic-XXXXCompressed-Trial.otf?v=1736858642528");
+}
+
+@font-face {
+  font-family: "Roxel";
+  src: url("https://cdn.glitch.global/ca3fab53-c8ab-42f6-934f-92ae328781e0/Roxel.-Regular.otf?v=1736858592489");
+}
+
+@font-face {
+  font-family: "jacquarda";
+  src: url("https://cdn.glitch.global/ca3fab53-c8ab-42f6-934f-92ae328781e0/JacquardaBastarda9-Regular.ttf?v=1736858654810");
+}
+
+@font-face {
+  font-family: "Cyberfairy";
+  src: url("https://cdn.glitch.global/ca3fab53-c8ab-42f6-934f-92ae328781e0/Cyber_Fairy-Regular.otf?v=1736858687614");
+}
+
+@font-face {
+  font-family: "Ballet";
+  src: url(https://cdn.glitch.global/ca3fab53-c8ab-42f6-934f-92ae328781e0/Ballet-Regular-VariableFont_opsz.ttf?v=1736859220088);
+}
+
+@font-face {
+  font-family: "scope";
+  src: url(https://cdn.glitch.global/ca3fab53-c8ab-42f6-934f-92ae328781e0/scope-variable.ttf?v=1736870448373);
+}
+
+* {
+  margin: 0;
+  padding-left: 15px;
+  padding-top: 15px;
+  color: blue;
+}
+
+
+header{
+  padding-top: 20px;
+  padding-bottom:20px;
+  left: 10%;
+  font-size:30px;
+  text-align:center;
+  font-family:'scope';
+  line-height: 1.5;
+  color:black;
+}
+
+
+#uploadedImage {
+  position: absolute;
+  top: 150px; 
+  right: 200px;
+  width: 280px;  /* Set the image size */
+  height: 280px; /* Set the image size */
+  object-fit: cover; /* Ensure the image doesn't stretch */
+  border-color:black;
+}
+
+
+/*UPLOAD YOUR BEST YOU*/
+#takePictureButton {
+  top:280px;
+  left:10px;
+  padding:10px 10px;
+  margin:12px;
+  font-size:40px;
+  font-family:'Helvetica';
+  border-radius:2px;
+  display:block;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+#target {
+  position: relative;
+  width: 1080px;
+  height: 1080px;
+  outline: 1px solid red;
+  background-color: magenta;
+}
+
+/*save me and share me*/
+#screenshotButton {
+  top: 360px;
+  left:10px;
+  z-index: 1000; /* Ensure button is above everything */
+  padding: 10px 10px;
+  border: none;
+  border: 2px solid Black;
+  cursor: pointer;
+  font-size:40px;
+  font-family:'Helvetica';
+    display:block;
+  margin:12px;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#screenshotButton:hover {
+  background-color: #F0F8FF;
+}
+
+/*web ring*/
+#knapp1 {
+  position:absolute;
+  right:0%;
+  margin:12px;
+  padding: 8px;
+  border: 2px solid Black;
+  cursor: pointer;
+  font-size:25px;
+  font-family:'Helvetica';
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+[contenteditable] {
+  border: solid 1px;
+  padding: 0.5rem;
+  background-color: whitesmoke;
+}
+
+/*hello*/
+h1 {
+  font-family: "scope";
+  font-size: 45px;
+  position: absolute;
+  margin-left: 5px;
+  margin-top: -40px;
+  scale: 1 1.8;
+  text-shadow: 0 0 0.05em white, 0 0 0.05em white, 0 0 0.05em white,
+    0 0 0.05em white, 0 0 0.05em white, 0 0 0.05em white, 0 0 0.05em white,
+    0 0 0.05em white, 0 0 0.05em white, 0 0 0.05em white, 0 0 0.05em white,
+    0 0 0.05em white, 0 0 0.05em white, 0 0 0.05em white, 0 0 0.05em white;
+
+  /*my name is*/
+}
+h2 {
+  font-family: "notmono";
+  font-size: 50px;
+  position: absolute;
+  margin-top: 40px;
+  margin-left:130px;
+  scale: 2.2 1;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: whitesmoke;
+  outline-style: solid;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 1000px;
+  margin-top: 130px;
+  position: absolute;
+}
+
+/*im looking for*/
+h3 {
+  font-family: "gravitynormal";
+  font-size: 50px;
+  scale: 1 3.5;
+  color: white;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: blue;
+  border-radius: 50%;
+  margin-top: 50px;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 139px;
+}
+
+/*where */
+h4 {
+  font-family: "Gravitynormal";
+  font-size:80px;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 390px;
+}
+
+/*my max budget*/
+h5 {
+  font-family: 'helvetica';
+  line-height:80%;
+  font-size: 30px;
+  text-align: center;
+  position: absolute;
+  margin-left: 900px;
+  margin-top: 185px;
+  font-stretch: condensed;
+  scale: 1 3;
+}
+
+/*i am*/
+.number6 {
+  font-family: "ballet";
+  position: absolute;
+  font-size: 90px;
+  margin-top: 520px;
+  margin-left: 80px;
+  scale: 1.5 1;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: blue;
+}
+/*and*/
+.number7 {
+  font-family: "Jacquarda";
+  color:whitesmoke;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: blue;
+  font-size: 100px;
+  position: absolute;
+  top: 730px;
+  left: 0px;
+}
+
+/*most importantly*/
+.number8 {
+  font-family: "Helvetica";
+  font-size: 40px;
+  scale: 1.2 1.8;
+  position: absolute;
+  top: 850px;
+  left: 40px;
+}
+
+.bold {
+  font-weight:bold;
+  
+}
+
+/*inmy free time*/
+.number9 {
+  font-family: "notmono";
+  font-size: 30px;
+  position: absolute;
+  top: 580px;
+  right: 10px;
+  text-align: center;
+  font-stretch: condensed;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: blue;
+  color:blue;
+  scale:1 3;
+}
+
+/*contact me on*/
+.number10 {
+  font-family: "ballet";
+    -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: blue;
+  font-size: 80px;
+  position: absolute;
+  scale: 1 1.5;
+  top: 765px;
+  right: 35px;
+}
+
+.yours {
+  font-family:'notmono';
+  font-size:15px;
+  position: absolute;
+  top: 995px;
+  left: 550px;
+  scale:3 3;
+  font-stretch:bold;
+}
+
+.editable {
+  padding: 10px;
+  position: absolute;
+  border-radius: 8px;
+  background-color: white;
+  width: auto;
+  min-width: 150px;
+  max-width: 650px;
+  min-height: 50px;
+  overflow-wrap: break-word; /* Ensures long words break */
+  word-wrap: break-word; /* For legacy support */
+  position: absolute; /* Allows precise positioning */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: text;
+  font-family: "Helvetica";
+  font-size: 50px;
+  min-font-size:10px;
+  max-font-size:100px;
+}
+
+/* Positioning each container */
+/*nAME*/
+#container1 {
+  font-size:80px;
+  top: 40px;
+  left: 650px;
+  width: auto;
+  min-width: 150px;
+  max-width: 400px;
+  min-height: 50px;
+  max-height:80px;
+}
+
+/*big huge mansion*/
+#container2 {
+  font-family: "Helvetica";
+  top: 320px;
+  left: 10px;
+  min-width: 150px;
+  max-width: 550px;
+  min-height: 50px;
+  max-height:100px;
+}
+
+/*the coolest city*/
+#container3 {
+  top: 540px;
+  left: 5px;
+   min-width: 150px;
+  max-width: 750px;
+  min-height: 50px;
+  max-height:75px;
+}
+
+/*million euro*/
+#container4 {
+  top: 480px;
+  right:20px;
+  max-width: 50px;
+  font-size: 80px;
+  font-family: "Ballet";
+  text-align: center;
+   min-width: 150px;
+  max-width: 250px;
+  min-height: 50px;
+  max-height:70px;
+  text-align:right;
+}
+
+/*rich*/
+#container5 {
+  top: 680px;
+  left: 30px;
+    min-width: 150px;
+  max-width: 350px;
+  min-height: 50px;
+  max-height:75px;
+}
+/*cute*/
+#container6 {
+  top: 750px;
+  left: 180px;
+   max-width: 350px;
+  min-height: 50px;
+  max-height:75px;
+}
+
+/*very very funny*/
+#container7 {
+  top: 950px;
+  left: 10px;
+   min-width: 150px;
+  max-width: 600px;
+  min-height: 50px;
+  max-height:65px;
+  
+}
+
+/*in my free time*/
+#container8 {
+  top: 710px;
+ right:25px;
+  scale:1 1.5;
+  font-size:30px;
+  text-align:right;
+   min-width: 150px;
+  max-width: 600px;
+  min-height: 50px;
+  max-height:65px;
+}
+
+/*email*/
+#container9 {
+  top: 890px;
+  right: 50px;
+   min-width: 150px;
+  max-width: 350px;
+  min-height: 50px;
+  max-height:75px;
+}
+
+/*name*/
+#container10 {
+  top: 980px;
+  right: 100px;
+  text-align:left;
+   min-width: 150px;
+  max-width: 200px;
+  min-height: 50px;
+  max-height:75px;
+}
+
+
+
+
+
